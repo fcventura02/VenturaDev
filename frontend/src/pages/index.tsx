@@ -3,6 +3,8 @@ import Head from "next/head";
 import styled from "styled-components";
 import IconDev from "../assets/dev-ico.svg";
 import IconProjects from "../assets/projetos-icon.svg";
+import Link from 'next/link';
+
 
 const Main = styled.main`
   height: 100vh;
@@ -124,12 +126,16 @@ export default function Home() {
             <Banner>
               <IconDev />
               <BannerText>Sobre o Dev</BannerText>
-              <BannerButton href="#">SAIBA MAIS</BannerButton>
+              <Link href="/Dev">
+              <BannerButton>SAIBA MAIS</BannerButton>
+              </Link>
             </Banner>
             <Banner>
               <IconProjects />
               <BannerText>Projetos</BannerText>
+              <Link href="/Dev">
               <BannerButton href="#">SAIBA MAIS</BannerButton>
+              </Link>
             </Banner>
           </BannerContainer>
         </Section>
