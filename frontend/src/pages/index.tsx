@@ -12,37 +12,56 @@ const Main = styled.main`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  @media screen and (max-width: 900px){
+    height: 100%;
+    flex-direction: column-reverse;
+  }
 `;
 
 const Section = styled.section`
-  max-width: 500px;
+  width: 32rem;
+  @media screen and (max-width: 900px){
+    margin-top:3rem;
+    max-width: 90%;
+  }
 `;
 
 const Title = styled.h1`
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
   font-family: 'Roboto', sans-serif;
+  @media screen and (max-width: 500px){
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+  }
 `;
+
 
 const Text = styled.p`
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 25px;
 `;
 
 const BannerContainer = styled.div`
   margin-top: 33px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   svg {
     margin-top: 15px;
     margin-bottom: 22px;
   }
-`;
+  @media screen and (max-width: 520px){
+    width:100%;
+    flex-direction: column;
+    align-items:center;
+  }
+  `;
 
 const Banner = styled.div`
   width: 223px;
@@ -54,6 +73,9 @@ const Banner = styled.div`
   background: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  @media screen and (max-width: 520px){
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const BannerText = styled.div`
@@ -83,6 +105,12 @@ const SectionLogo = styled.section`
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  @media screen and (max-width: 900px){
+    height: 100vh;
+    width:100%;
+    max-width:100vh;
+    justify-content:center
+  }
 `;
 
 const Logo = styled.div`
@@ -90,12 +118,13 @@ const Logo = styled.div`
   height: 125px;
   border: 5px solid #f200ae;
   box-sizing: border-box;
-  border-radius: 100px;
+  border-radius: 9rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 50px;
+  font-size: 4rem;
   color: #00c9d8;
+  
 `;
 
 const LogoText = styled.p`
@@ -127,14 +156,14 @@ export default function Home() {
               <IconDev />
               <BannerText>Sobre o Dev</BannerText>
               <Link href="/Dev">
-              <BannerButton>SAIBA MAIS</BannerButton>
+                <BannerButton>SAIBA MAIS</BannerButton>
               </Link>
             </Banner>
             <Banner>
               <IconProjects />
               <BannerText>Projetos</BannerText>
               <Link href="/Dev">
-              <BannerButton href="#">SAIBA MAIS</BannerButton>
+                <BannerButton href="#">SAIBA MAIS</BannerButton>
               </Link>
             </Banner>
           </BannerContainer>

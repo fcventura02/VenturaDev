@@ -17,9 +17,12 @@ export default createGlobalStyle`
     body{
         background: linear-gradient(89.89deg, #F200AE 0.09%, rgba(92, 128, 151, 0) 79.89%), #283035;
         color: #ffffff;
+        @media screen and (max-width: 900px){
+        background: linear-gradient(0deg, #F200AE 0.09%, rgba(92, 128, 151, 0) 79.89%), #283035;
+    }
         
     }
     #__next{
-        height: 100vh;
+        height: 100%;
     }
 `;  
