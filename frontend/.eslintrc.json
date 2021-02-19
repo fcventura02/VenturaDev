@@ -26,8 +26,16 @@
         "prettier"
     ],
     "rules": {
-        "prettier/prettier": "error",
-        "space-before-function-paren":"off",
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto",
+                "singleQuote": true
+            }
+        ],
+        "semi": [2, "always"],
+        "no-use-before-define": "off",
+        "space-before-function-paren": "off",
         "react/prop-types": "off"
     }
 }
