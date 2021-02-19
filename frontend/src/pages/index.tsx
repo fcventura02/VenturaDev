@@ -95,6 +95,21 @@ export default function Home() {
     <>
       <Head>
         <title>Dev Ventura</title>
+        <title>Dev Ventura</title>
+        <meta name="title" content="Dev Ventura" />
+        <meta name="description" content="Este é um site pessoal, entre e conheça meu trabalho." />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://devventura.cf/" />
+        <meta property="og:title" content="Dev Ventura" />
+        <meta property="og:description" content="Este é um site pessoal, entre e conheça meu trabalho." />
+        <meta property="og:image" content="" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://devventura.cf/" />
+        <meta property="twitter:title" content="Dev Ventura" />
+        <meta property="twitter:description" content="Este é um site pessoal, entre e conheça meu trabalho." />
+        <meta property="twitter:image" content=""></meta>
       </Head>
       <Main>
         <Section>
@@ -115,7 +130,7 @@ export default function Home() {
             <Banner>
               <IconProjects />
               <BannerText>Projetos</BannerText>
-              <Link href="/Dev">
+              <Link href="/Projects">
                 <BannerButton href="#">SAIBA MAIS</BannerButton>
               </Link>
             </Banner>
