@@ -14,11 +14,6 @@ const Main = styled.main`
   justify-content: center;
   padding: 10px;
 `;
-const Section = styled.section`
-  max-width: 1075px;
-  display: flex;
-  flex-direction: row;
-`;
 export default function Portfolio() {
   return (
     <>
@@ -28,9 +23,7 @@ export default function Portfolio() {
       <Contain>
         <Header />
         <Main>
-          <Section>
-            <Projects />
-          </Section>
+          <Projects />
         </Main>
       </Contain>
     </>

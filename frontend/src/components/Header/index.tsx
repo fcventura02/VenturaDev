@@ -8,8 +8,9 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1075px;
+  max-width: 952px;
   width: 97%;
+  height: 70px;
   margin: auto;
   svg {
     width: 50px;
