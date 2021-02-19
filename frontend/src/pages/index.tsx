@@ -130,8 +130,8 @@ export default function Home() {
             <Banner>
               <IconProjects />
               <BannerText>Projetos</BannerText>
-              <Link href="/Projects">
-                <BannerButton href="#">SAIBA MAIS</BannerButton>
+              <Link href="/Portfolio">
+                <BannerButton>SAIBA MAIS</BannerButton>
               </Link>
             </Banner>
           </BannerContainer>

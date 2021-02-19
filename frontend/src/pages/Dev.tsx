@@ -1,4 +1,7 @@
-import Head from "next/head";
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import React from 'react';
+import Head from 'next/head';
+import Header from '../components/Header';
 
 export default function Dev() {
   return (
@@ -6,9 +9,7 @@ export default function Dev() {
       <Head>
         <title>Dev Ventura</title>
       </Head>
-      <div>
-          <h1>Hello</h1>
-      </div>
+      <Header />
     </>
   );
 }
