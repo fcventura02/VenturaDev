@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import IconReact from '../../assets/icon_react.svg';
 import IconTs from '../../assets/icon_ts.svg';
-// import IconSpring from '../../assets/icon_Spring.svg';
+import IconSpring from '../../assets/icon_spring.svg';
 import ImageHand from '../../assets/image_hand.svg';
 
 const Container = styled.section`
@@ -122,6 +122,7 @@ export default function Projects() {
             </Text>
             <Title>Tecnologias</Title>
             <div className="icons">
+              <IconSpring />
               <IconReact />
               <IconTs />
             </div>
