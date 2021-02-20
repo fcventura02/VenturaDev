@@ -2,14 +2,22 @@
 import React from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
+import styled from 'styled-components';
+
+const Container = styled.main`
+  height: 100vh;
+  display: flex;
+  align-items: center;
+`;
 
 export default function Dev() {
   return (
     <>
       <Head>
-        <title>Dev Ventura</title>
+        <title>Dev Ventura | Sobre</title>
       </Head>
-      <Header />
+      <Header name="Dev" />
+      <Container />
     </>
   );
 }

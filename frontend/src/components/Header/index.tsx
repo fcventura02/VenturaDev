@@ -56,18 +56,18 @@ const Item = styled.li`
     background: #00c9d8;
   }
 `;
-export default function Header() {
+export default function Header({ name }) {
   return (
     <Container>
       <Contain>
         <Item>
           <Link href="/">Home</Link>
         </Item>
-        <Item>
+        <Item className={name === 'Dev' && 'selected'}>
           <Link href="/Dev">Sobre</Link>
         </Item>
-        <Item className="selected">
-          <Link href="/Portfolio">Portifólio</Link>
+        <Item className={name === 'Portfolio' && 'selected'}>
+          <Link href="/Portfolio">Portfólio</Link>
         </Item>
       </Contain>
       <Logo />

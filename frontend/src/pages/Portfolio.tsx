@@ -18,10 +18,10 @@ export default function Portfolio() {
   return (
     <>
       <Head>
-        <title>DevVentura | Projects</title>
+        <title>DevVentura | Portfólio</title>
       </Head>
       <Contain>
-        <Header />
+        <Header name="Portfolio" />
         <Main>
           <Projects />
         </Main>
